@@ -1,3 +1,5 @@
 micronaut:
   application:
     name: micronautHttpclientLambdaApp
+book:
+  url: https://blah.book.net

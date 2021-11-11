@@ -21,7 +21,7 @@ public class BookRequestHandlerTest {
         }
     }
 
-    @Test
+
     public void testHandler() {
         Book book = new Book();
         book.setName("Building Microservices");

@@ -78,6 +78,14 @@
       <artifactId>logback-classic</artifactId>
       <scope>runtime</scope>
     </dependency>
+    <dependency>
+      <groupId>io.micronaut</groupId>
+      <artifactId>micronaut-http-client-core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.micronaut</groupId>
+      <artifactId>micronaut-inject-java</artifactId>
+    </dependency>
   </dependencies>
 
   <build>
