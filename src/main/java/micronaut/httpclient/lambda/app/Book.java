@@ -6,22 +6,18 @@ import javax.validation.constraints.NotBlank;
 @Introspected
 public class Book {
 
-    @NonNull
     @NotBlank
     private String customerId;
 
     public Book() {
     }
 
-    @NonNull
     @NotBlank
     private String locationId;
 
-    @NonNull
     @NotBlank
     private String token;
 
-    @NonNull
     public String getCustomerId() {
 
         return customerId;
@@ -32,7 +28,6 @@ public class Book {
         this.customerId = customerId;
     }
 
-    @NonNull
     public String getLocationId() {
 
         return locationId;
@@ -43,7 +38,6 @@ public class Book {
         this.locationId = locationId;
     }
 
-    @NonNull
     public String getToken() {
 
         return token;
@@ -54,7 +48,6 @@ public class Book {
         this.token = token;
     }
 
-    @NonNull
     public String getName() {
 
         return name;
@@ -65,7 +58,6 @@ public class Book {
         this.name = name;
     }
 
-    @NonNull
     @NotBlank
     private String name;
 
