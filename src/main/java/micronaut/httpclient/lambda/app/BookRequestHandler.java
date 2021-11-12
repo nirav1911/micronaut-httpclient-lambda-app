@@ -28,6 +28,9 @@ public class BookRequestHandler extends MicronautRequestHandler<Book, BookSaved>
     public BookSaved execute(@Valid Book input) {
         //HttpRequest request = bookLowLevelClient.buildHttpRequest(input.getCustomerId(),input.getLocationId(), input.getToken(), input);
         //BookSaved bookSaved = bookLowLevelClient.updateBook(request);
+        if(input.getCustomerId().startsWith("Test")){
+            throw new CustomerNameException("Wrong Customer:"+ input.getCustomerId());
+        }
         BookSaved bookSaved = bookApiClient.updateBook(input.getToken(),input.getCustomerId(),input.getLocationId(), input);
         return bookSaved;
     }

@@ -25,8 +25,18 @@ public class BookRequestHandlerTest {
     public void testHandler() {
         Book book = new Book();
         book.setName("Building Microservices");
-        book.setCustomerId("Test123");
+        book.setCustomerId("John123");
         book.setLocationId("");
+        book.setToken("Token123");
+        BookSaved bookSaved = bookRequestHandler.execute(book);
+    }
+
+    @Test
+    public void testCustomExceptionHandler() {
+        Book book = new Book();
+        book.setName("Building Microservices");
+        book.setCustomerId("Test123");
+        book.setLocationId("Location123");
         book.setToken("Token123");
         BookSaved bookSaved = bookRequestHandler.execute(book);
     }
